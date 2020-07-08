@@ -11,16 +11,16 @@ class Navigation extends \Core\View
     {
         parent::__construct($data);
 
-        $this->addLink('left', '/index.php', 'Home');
-        $this->addLink('left', '/feedback.php', 'Comments');
+        $this->addLink('left', '/index', 'Home');
+        $this->addLink('left', '/feedback', 'Comments');
 
         $user = App::$session->getUser();
         if ($user) {
-            $this->addLink('right', '/logout.php', "Logout");
+            $this->addLink('right', '/logout', "Logout");
 
         } else {
-            $this->addLink('right', '/login.php', 'Login');
-            $this->addLink('right', '/register.php', 'Register');
+            $this->addLink('right', '/login', 'Login');
+            $this->addLink('right', '/register', 'Register');
         }
 
     }

@@ -108,6 +108,12 @@ form button {
     transition: 0.2s linear;
 }
 
+form button:hover {
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #9c9bc7;
+}
+
 .photo {
     background-image: url("../img/taxi.jpg");
     background-size: cover;

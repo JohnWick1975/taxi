@@ -44,7 +44,7 @@ $navigation_html = $navigationView->render();
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Login</title>
         <link rel="stylesheet" href="assets/css/style.css">
-        <script src="assets/js/app.js" type="module"></script>
+        <script src="assets/js/main.js" defer></script>
     </head>
     <body class="comment">
         <?php print $navigation_html; ?>
