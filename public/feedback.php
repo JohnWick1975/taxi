@@ -26,8 +26,8 @@ function form_fail(&$form, $input)
     $form['message'] = 'Fail to add';
 }
 
-$table = new TableData();
-$table_html = $table->render();
+/*$table = new TableData();
+$table_html = $table->render();*/
 
 if (App::$session->getUser()) {
     $form = new AddForm();
@@ -51,7 +51,7 @@ $navigation_html = $navigationView->render();
         <main class="main-feedback">
             <h1>Reviews: </h1>
             <div class="feedback-wrapper">
-                <?php print $table_html ?>
+               <!-- --><?php /*print $table_html */?>
             </div>
             <div class="comment-form-wrapper">
                 <?php if (App::$session->getUser()) : ?>

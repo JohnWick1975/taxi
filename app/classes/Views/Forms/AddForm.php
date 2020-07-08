@@ -13,7 +13,7 @@ class AddForm extends Form
         $data = [
             'attr' => [
                 'method' => 'POST',
-                'class' => 'add_comment'
+                'class' => 'add-comment'
             ],
             'fields' => [
                 'comment' => [
