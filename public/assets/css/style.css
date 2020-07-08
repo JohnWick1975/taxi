@@ -1,0 +1,212 @@
+*, *::before, *::after, *:hover {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 70px;
+}
+
+.main-feedback {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    box-shadow: 0 0 3px 3px #eee;
+    background-color: #444;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #ffffff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover:before {
+    cursor: pointer;
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+a:hover {
+}
+
+.wrapper > nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.left, .right {
+    display: flex;
+}
+
+.link-wrapper > a {
+    text-decoration: none;
+    margin-right: 8px;
+    font-size: 1.12rem;
+}
+
+form {
+    width: 50%;
+    min-width: 264px;
+    margin: 20px auto;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background: linear-gradient(#a0a0b6, #676684);
+}
+
+form input,
+form button, form textarea {
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #fafafa;
+    border-radius: 10px;
+}
+
+form textarea {
+    height: 200px;
+    resize: none;
+}
+
+form button {
+    border: none;
+    background-color: #b8b8b8;
+    transition: 0.2s linear;
+}
+
+.photo {
+    background-image: url("../img/taxi.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+
+@media screen and (min-width: 400px) {
+    .photo {
+        height: 300px;
+    }
+}
+
+.cards-container {
+    text-align: center;
+    display: grid;
+    width: 80%;
+    margin: 20px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px 40px;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid #c6c5c5;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px #c6c5c5;
+}
+
+.card h3 {
+    margin: 10px auto;
+}
+
+.image {
+    margin: 0 auto;
+    height: 200px;
+    width: 333px;
+    background-size: cover;
+    background-position: center;
+}
+
+iframe {
+    height: 300px;
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #444444;
+}
+
+footer div {
+    color: white;
+}
+
+table {
+    margin: 50px auto 0;
+    text-align: center;
+    border-collapse: collapse;
+    background: #f5ffff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+th {
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
+    background: linear-gradient(#9595b6, #5a567f);
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+}
+
+th:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 25%;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .08));
+}
+
+th:first-child {
+    border-left: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+
+td {
+    border: 1px solid #e3eef7;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+td:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    color: #f7ff03;
+}
