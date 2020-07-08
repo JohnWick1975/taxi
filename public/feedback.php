@@ -46,7 +46,7 @@ $navigation_html = $navigationView->render();
         <link rel="stylesheet" href="assets/css/style.css">
         <script src="assets/js/app.js" type="module"></script>
     </head>
-    <body>
+    <body class="comment">
         <?php print $navigation_html; ?>
         <main class="main-feedback">
             <h1>Reviews: </h1>

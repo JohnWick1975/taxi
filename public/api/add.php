@@ -13,11 +13,11 @@ function form_success(&$form, $input)
         'user_id' => App::$session->getUser()->id,
         'comment' => $input['comment']
     ]);
-    $user = \App\Users\Model::find(App::$session->getUser()->id);
+    /*$user = \App\Users\Model::find(App::$session->getUser()->id);*/
 
     $id = Model::insert($comment);
     $comment->id = $id;
-    $comment->name = $user->name;
+    $comment->name = App::$session->getUser()->name;
 
     print json_encode($comment);
 }

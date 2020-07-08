@@ -42,7 +42,7 @@ $navigation_html = $navigationView->render();
         <title>Login</title>
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body>
+    <body class="login">
         <?php print $navigation_html; ?>
         <main class="main-login">
             <div class="wrapper">

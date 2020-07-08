@@ -44,7 +44,7 @@ $navigation_html = $navigationView->render();
         <title>Register</title>
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body>
+    <body class="register">
         <?php print $navigation_html; ?>
         <main class="main-register">
             <div class="wrapper">

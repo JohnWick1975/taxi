@@ -7,7 +7,7 @@ export function createComment(form_Element, parent) {
     })
         .then(response => response.json())
         .then(data => {
-            console.log(data)
+
             const tr = document.createElement('tr');
             const td = tr.insertCell();
             td.textContent = data.name;
@@ -17,7 +17,6 @@ export function createComment(form_Element, parent) {
 
             const td2 = tr.insertCell();
             td2.textContent = data.date;
-            console.log(parent);
             parent.append(tr);
         })
 }

@@ -8,6 +8,16 @@ body {
     padding-bottom: 70px;
 }
 
+body.register, body.login {
+    background-image: url("../img/taxi-patern2.jpg");
+    background-size: cover;
+}
+
+body.comment {
+    background-image: url("../img/taxi-patern.jpg");
+    background-size: cover;
+}
+
 .main-feedback {
     margin: 0 auto;
     width: 80%;
@@ -105,18 +115,12 @@ form button {
     height: 150px;
 }
 
-@media screen and (min-width: 400px) {
-    .photo {
-        height: 300px;
-    }
-}
-
 .cards-container {
     text-align: center;
     display: grid;
     width: 80%;
     margin: 20px auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px 40px;
 }
 
@@ -129,6 +133,27 @@ form button {
 
 .card h3 {
     margin: 10px auto;
+}
+@media screen and (min-width: 400px) {
+    .photo {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .cards-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .cards-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
 
 .image {
